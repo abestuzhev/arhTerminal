@@ -1,0 +1,157 @@
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+.a-wrapp, .header, .slider, .how-it-work, .advantages, .advantages .advantages_list_item, .services, .services_list_item, .buses, .inert, .area, .partners, .footer {
+  outline: 1px solid #ccc; }
+
+body {
+  font-family: "Cuprum", sans-serif;
+  font-size: 20px;
+  line-height: 20px; }
+
+h1 {
+  font-family: "Cuprum", sans-serif;
+  font: 100px/110px sans-serif;
+  font: 5.4vw/5.5vw sans-serif; }
+
+h2 {
+  font-size: 35px;
+  line-height: 1.2;
+  margin: 0; }
+
+h3 {
+  font: 25px/30px sans-serif; }
+
+.a-wrapp {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px; }
+  .a-wrapp::before, .a-wrapp::after {
+    content: '';
+    display: block;
+    height: 1px; }
+
+.h2_wrapp {
+  text-align: center; }
+
+.h2-title {
+  color: #222021;
+  display: inline-block;
+  padding-left: 35px;
+  text-transform: uppercase;
+  position: relative;
+  margin: 40px 0 20px; }
+  .h2-title::before {
+    content: '';
+    display: block;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    position: absolute;
+    background-color: #ffda01; }
+
+.header {
+  height: 77px; }
+
+.slider {
+  height: 587px; }
+
+.how-it-work {
+  height: 410px; }
+
+.advantages {
+  background-color: #dbe6ea; }
+  .advantages_title::before {
+    background-color: #83aab8; }
+  .advantages .advantages_list_item {
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+    margin-right: 23px;
+    padding-left: 50px;
+    position: relative; }
+    .advantages .advantages_list_item::before {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      position: absolute;
+      left: 0;
+      top: -5px; }
+    .advantages .advantages_list_item::after {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #9dd5b2;
+      position: absolute;
+      left: 11px;
+      top: 6px; }
+
+.services_list_item {
+  width: 370px;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-right: 53px;
+  vertical-align: top; }
+  .services_list_item_title, .services_list_item_text {
+    margin-left: 87px; }
+  .services_list_item_title {
+    margin-top: 7px; }
+  .services_list_item_img {
+    float: left;
+    background-image: url("../img/services-item-bg.png");
+    background-color: #ffda01;
+    text-align: center;
+    width: 72px;
+    height: 71px;
+    line-height: 0;
+    line-height: 71px; }
+    .services_list_item_img img {
+      vertical-align: middle; }
+  .services_list_item_text {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #7d7d7d; }
+
+.buses {
+  height: 410px; }
+
+.inert {
+  height: 535px; }
+
+.area {
+  height: 640px; }
+
+.partners {
+  height: 245px; }
+
+.footer {
+  height: 305px; }
+
+@media screen and (max-width: 1280px) {
+  .a-wrapp {
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+  .h2_wrapp {
+    text-align: left; } }
+
+@media screen and (max-width: 915px) {
+  .advantages .advantages_list_item,
+  .services .services_list_item {
+    width: 90%;
+    margin-right: 0; }
+  .h2-title {
+    font-size: 25px;
+    margin: 25px 0 20px; } }

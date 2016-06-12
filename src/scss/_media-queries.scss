@@ -1,0 +1,26 @@
+@media screen and (max-width: 1280px) {
+  .a-wrapp {
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .h2_wrapp {
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 915px) {
+  .advantages .advantages_list_item,
+  .services .services_list_item {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  .h2-title {
+    font-size: $mobile-size-title;
+    margin: 25px 0 20px;
+  }
+}
