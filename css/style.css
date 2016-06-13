@@ -12,6 +12,10 @@ body {
   font-size: 20px;
   line-height: 20px; }
 
+p {
+  margin: 0;
+  margin-bottom: 1em; }
+
 h1 {
   font-family: "Cuprum", sans-serif;
   font: 100px/110px sans-serif;
@@ -32,7 +36,8 @@ h3 {
   .a-wrapp::before, .a-wrapp::after {
     content: '';
     display: block;
-    height: 1px; }
+    height: 1px;
+    clear: both; }
 
 .h2_wrapp {
   text-align: center; }
@@ -97,37 +102,64 @@ h3 {
       left: 11px;
       top: 6px; }
 
-.services_list_item {
-  width: 370px;
-  display: inline-block;
-  margin-bottom: 30px;
-  margin-right: 53px;
-  vertical-align: top; }
-  .services_list_item_title, .services_list_item_text {
-    margin-left: 87px; }
-  .services_list_item_title {
-    margin-top: 7px; }
-  .services_list_item_img {
-    float: left;
-    background-image: url("../img/services-item-bg.png");
-    background-color: #ffda01;
-    text-align: center;
-    width: 72px;
-    height: 71px;
-    line-height: 0;
-    line-height: 71px; }
-    .services_list_item_img img {
-      vertical-align: middle; }
-  .services_list_item_text {
-    font-size: 16px;
-    line-height: 1.2;
-    color: #7d7d7d; }
+.services {
+  padding-bottom: 100px;
+  background: url("../img/services-bg.png") no-repeat 0 100%; }
+  .services_list_item {
+    width: 370px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 53px;
+    vertical-align: top; }
+    .services_list_item_title, .services_list_item_text {
+      margin-left: 87px; }
+    .services_list_item_title {
+      margin-top: 7px; }
+    .services_list_item_img {
+      float: left;
+      background-image: url("../img/services-item-bg.png");
+      background-color: #ffda01;
+      text-align: center;
+      width: 72px;
+      height: 71px;
+      line-height: 71px; }
+      .services_list_item_img img {
+        vertical-align: middle; }
+    .services_list_item_text {
+      font-size: 16px;
+      line-height: 1.2;
+      color: #7d7d7d; }
 
 .buses {
   height: 410px; }
+  .buses_text_accent {
+    background-color: #ffda01; }
 
 .inert {
-  height: 535px; }
+  padding-top: 110px;
+  background: url("../img/inert-bg.png") no-repeat 0% 0%;
+  line-height: 0; }
+  .inert_title::before {
+    background-color: #000; }
+  .inert_list {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 20px; }
+  .inert_advantage {
+    width: 735px;
+    height: 203px;
+    margin-left: 160px;
+    margin-bottom: 40px;
+    display: table; }
+    .inert_advantage_img {
+      float: left;
+      width: 146px; }
+    .inert_advantage_title {
+      font-size: 25px;
+      line-height: 1.2;
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 20px; }
 
 .area {
   height: 640px; }

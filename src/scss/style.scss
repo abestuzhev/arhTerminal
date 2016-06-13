@@ -6,6 +6,11 @@ body {
   line-height: $default-size-text;
 }
 
+p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
 h1 {
   font-family: $default-font;
   font: 100px/110px sans-serif;
@@ -33,6 +38,7 @@ h3 {
     content: '';
     display: block;
     height: 1px;
+    clear: both;
   }
 }
 
@@ -129,6 +135,9 @@ h3 {
 
 .services{
   @extend %outline;
+  // position: relative;
+  padding-bottom: 100px;
+  background: url('../img/services-bg.png') no-repeat 0 100%;
   // height: 510px;
 
   &_list {
@@ -158,7 +167,7 @@ h3 {
         text-align: center;
         width: 72px;
         height: 71px;
-        line-height: 0;
+        // line-height: 0;
         line-height: 71px;
 
         img {
@@ -178,11 +187,55 @@ h3 {
 .buses{
   @extend %outline;
   height: 410px;
+
+
+  &_text {
+    &_accent {
+      background-color: $accent-color;
+    }
+  }
 } //END buses
 
 .inert{
   @extend %outline;
-  height: 535px;
+  // height: 535px;
+  padding-top: 110px;
+  background: url('../img/inert-bg.png') no-repeat 0% 0%;
+  line-height: 0;
+
+  &_title {
+    &::before {
+      background-color: #000;
+    }
+  }
+
+  &_list {
+    font-size: $description-default-text;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  &_advantage {
+    width:735px;
+    height: 203px;
+    margin-left: 160px;
+    margin-bottom: 40px;
+    display: table;
+
+    &_img {
+      float:left;
+      width:146px;
+    }
+
+    &_title {
+      font-size: $advantage-size-text;
+      line-height: 1.2;
+      // margin-left: 166px;
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 20px;
+    }
+  }
 } //END inert
 
 .area{
