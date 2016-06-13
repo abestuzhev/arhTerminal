@@ -10,10 +10,13 @@ $description-small-text: 14px;
 $description-small-color: #7d7d7d;
 
 $default-color-dark: #222021;
+$light-color-dark: #252525;
 $accent-color: #ffda01;
 $default-font: 'Cuprum', sans-serif;
 
-
+%transition {
+  transition: all .8s ease-out;
+}
 
 
 

@@ -291,7 +291,51 @@ h3 {
 .footer{
   @extend %outline;
   height: 305px;
+  background: $light-color-dark;
+  color: $description-small-color;
+  font-size: $description-default-text;
+  line-height: 1.2;
+  padding-top: 10px;
+
+  &_left {
+    float: left;
+    width:216px;
+    @extend %outline;
+  }
+
+  &_right {
+    float: right;
+    @extend %outline;
+  }
+
+  &-bg {
+    background: url('../img/footer-bg.png') no-repeat 100% 100%;;
+  }
 } //END footer
 
+.copyright {
+  color: $description-small-color;
+  background-color: $default-color-dark;
+  padding: 20px 0;
+
+  &_text {
+    float:left;
+  }
+
+  &_signature {
+    float:right;
+
+    a {
+      color: #c1c1c1;
+      font-weight: 700;
+      @extend %transition;
+
+      &:hover {
+        @extend %transition;
+        text-decoration: none;
+      }
+    }
+  }
+}
 
 @import 'media-queries';
