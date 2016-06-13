@@ -301,11 +301,43 @@ h3 {
     float: left;
     width:216px;
     @extend %outline;
+
+    &_logo {
+      height: 76px;
+      margin-bottom: 20px;
+      @extend %outline;
+    }
   }
 
   &_right {
-    float: right;
-    @extend %outline;
+    float: left;
+    box-sizing: border-box;
+    // width:100%;
+    width:996px;
+    margin-left: 68px;
+    // @extend %outline;
+  }
+
+
+  &_menu {
+    padding: 35px 0 25px;
+    border-bottom: 1px solid $description-small-color;
+    text-align: justify;
+    line-height: 0;
+
+    &::after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
+
+    &_item {
+      display: inline-block;
+      a {
+        color:$default-color-light;
+        text-decoration: none;
+      }
+    }
   }
 
   &-bg {
