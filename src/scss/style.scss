@@ -70,6 +70,19 @@ h3 {
 .header {
   @extend %outline;
   height: 77px;
+  position: relative;
+  z-index: -2;
+
+  .logo_line {
+    height: 76px;
+    width:100%;
+    position: absolute;
+    z-index:-1;
+    background-color: $accent-color;
+    background: url('../img/footer-logo-bg.png') repeat-x;
+    top: 0;
+    right:82%;
+  }
 } //END header
 
 .slider {
@@ -290,40 +303,80 @@ h3 {
 
 .footer{
   @extend %outline;
-  height: 305px;
+  // height: 305px;
+  position: relative;
+  z-index:-2;
   background: $light-color-dark;
   color: $description-small-color;
   font-size: $description-default-text;
   line-height: 1.2;
   padding-top: 10px;
 
+  .logo_line {
+    height: 76px;
+    width:100%;
+    position: absolute;
+    z-index:-1;
+    background-color: $accent-color;
+    background: url('../img/footer-logo-bg.png') repeat-x;
+    top: 11px;
+    right:82%;
+  }
+
   &_left {
     float: left;
-    width:216px;
+    width: 216px;
     @extend %outline;
+    margin-bottom: 25px;
 
     &_logo {
-      height: 76px;
       margin-bottom: 20px;
       @extend %outline;
+      background-color: $accent-color;
+      background: url('../img/footer-logo-bg.png') repeat-x;
+      line-height: 76px;
+
+      img {
+        vertical-align: middle;
+      }
     }
   }
 
   &_right {
     float: left;
     box-sizing: border-box;
-    // width:100%;
     width:996px;
     margin-left: 68px;
-    // @extend %outline;
+    margin-bottom: 25px;
+
+    &_contact {
+      display: inline-block;
+      margin-right: 45px;
+      margin-bottom: 30px;
+      color: #fff;
+      font-size: $description-big-text;
+      line-height: 1.2;
+
+      p {
+        margin: 0;
+
+        span {
+          color: $accent-color;
+        }
+      }
+
+      &_text {
+      }
+    }
   }
 
 
   &_menu {
-    padding: 35px 0 25px;
+    padding: 26px 0 16px;
     border-bottom: 1px solid $description-small-color;
     text-align: justify;
     line-height: 0;
+    margin-bottom: 20px;
 
     &::after {
       content: '';
@@ -333,9 +386,18 @@ h3 {
 
     &_item {
       display: inline-block;
+
       a {
         color:$default-color-light;
+        display: block;
+        padding: 5px 0;
         text-decoration: none;
+        font-size: $description-big-text;
+        line-height: 1.2;
+
+        &:hover {
+          color: $accent-color;
+        }
       }
     }
   }
