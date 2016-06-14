@@ -15,8 +15,9 @@ p {
 
 h1 {
   font-family: $default-font;
-  font: 100px/110px sans-serif;
-  font: 5.4vw/5.5vw sans-serif;
+  font-size: 100px;
+  line-height: 1.2;
+  // font: 5.4vw/5.5vw sans-serif;
 }
 
 h2 {
@@ -208,9 +209,56 @@ h3 {
   }
 } //END header
 
-.slider {
+.home-slider {
   @extend %outline;
-  height: 587px;
+
+  .slick-arrow {
+    border:none;
+		position: absolute;
+		top: 50%;
+		margin-top: -47px;
+		width: 45px;
+		height: 94px;
+		background: url(../img/slider-arrows.png);
+		background-position: 0 0;
+		z-index: 1;
+
+    button {
+      color: transparent;
+    }
+
+		&:hover {
+			opacity: .8;
+		}
+
+		&.slick-prev {
+			left: 50%;
+			margin-left: -630px;
+		}
+
+		&.slick-next {
+			right: 50%;
+			margin-right: -630px;
+			background-position: -45px 0;
+		}
+	}
+
+  &_item {
+  	height: 482px;
+  	overflow: hidden;
+  	background-repeat: no-repeat;
+  	background-position: 50% 50%;
+  	background-size: cover;
+    cursor: pointer;
+
+  	&_description {
+      @extend %outline;
+  		width:50%;
+  		position: absolute;
+  		top:0;
+  		left:0;
+  	}
+  }
 } //END slider
 
 .how-it-work {
