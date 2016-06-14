@@ -16,7 +16,9 @@ p {
 h1 {
   font-family: $default-font;
   font-size: 100px;
-  line-height: 1.2;
+  line-height: 1.1;
+  margin:0;
+
   // font: 5.4vw/5.5vw sans-serif;
 }
 
@@ -204,6 +206,11 @@ h3 {
         border-radius: 2px;
         text-decoration: none;
         text-transform: uppercase;
+        @extend %transition;
+
+        &:hover {
+          @extend %btn-hover;
+        }
       }
     }
   }
@@ -252,12 +259,47 @@ h3 {
     cursor: pointer;
 
   	&_description {
-      @extend %outline;
-  		width:50%;
+      // @extend %outline;
+  		width: 570px;
   		position: absolute;
-  		top:0;
-  		left:0;
+  		top: 65px;
+  		left: 50%;
+      margin-left: -515px;
+      color: #fff;
+
+      h1 {
+        text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+      }
   	}
+
+    &_text {
+      margin:0;
+      font-size: $subtitle-text;
+      line-height: 1.2;
+      text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    }
+
+    &_btn {
+      display: inline-block;
+      padding: 15px 35px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-size: $advantage-size-text;
+      opacity: .9;
+      background: #fde102;
+      background: linear-gradient(to bottom,  #fde102 0%,#ee9b01 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde102', endColorstr='#ee9b01',GradientType=0 );
+      border-radius: 4px;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+      margin-top: 15px;
+      @extend %transition;
+
+      &:hover {
+        @extend %btn-hover;
+      }
+
+    }
   }
 } //END slider
 

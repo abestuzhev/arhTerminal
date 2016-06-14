@@ -1,6 +1,6 @@
 //variables
 
-$subtitle-text: 23px/23px;
+$subtitle-text: 23px;
 $default-size-text: 20px;
 $mobile-size-title: 25px;
 $advantage-size-text: 25px;
@@ -16,7 +16,7 @@ $accent-color: #ffda01;
 $default-font: 'Cuprum', sans-serif;
 
 %transition {
-  transition: all .8s ease-out;
+  transition: all .1s ease-out;
 }
 
 
@@ -37,4 +37,9 @@ ul {
 %outline {
   // outline:1px solid transparent;
   outline:1px solid #ccc;
+}
+
+%btn-hover {
+  opacity: .8;
+  @extend %transition;
 }
