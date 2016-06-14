@@ -6,7 +6,7 @@ ul {
   padding: 0;
   list-style: none; }
 
-.a-wrapp, .header, .header_logo, .header_nav, .home-slider, .how-it-work, .advantages, .advantages .advantages_list_item, .services, .services_list_item, .buses, .inert, .area, .partners, .footer, .footer_left, .footer_left_logo {
+.a-wrapp, .header, .header_logo, .header_nav, .home-slider, .how-it-work, .advantages, .advantages .advantages_list_item, .services, .services_list_item, .buses, .buses_slider_item, .inert, .area, .partners, .footer, .footer_left, .footer_left_logo {
   outline: 1px solid #ccc; }
 
 .header_call_btn a:hover, .home-slider_item_btn:hover {
@@ -35,7 +35,9 @@ h2 {
   margin: 0; }
 
 h3 {
-  font: 25px/30px sans-serif; }
+  font-size: 23px;
+  line-height: 1.2;
+  margin: 0; }
 
 .a-wrapp {
   width: 1280px;
@@ -175,7 +177,8 @@ h3 {
   height: 94px;
   background: url(../img/slider-arrows.png);
   background-position: 0 0;
-  z-index: 1; }
+  z-index: 1;
+  color: transparent; }
   .home-slider .slick-arrow button {
     color: transparent; }
   .home-slider .slick-arrow:hover {
@@ -292,6 +295,28 @@ h3 {
   height: 410px; }
   .buses_text_accent {
     background-color: #ffda01; }
+  .buses_slider_item {
+    width: 270px; }
+    .buses_slider_item_img {
+      float: left;
+      width: 146px;
+      height: 203px;
+      line-height: 0;
+      background: url("../img/buses-slide-1.png") no-repeat 0% 0%;
+      margin-right: 15px; }
+    .buses_slider_item_description {
+      display: table-cell;
+      height: 203px;
+      vertical-align: middle; }
+      .buses_slider_item_description h3 {
+        margin-bottom: 10px; }
+      .buses_slider_item_description p {
+        font-size: 18px;
+        line-height: 1.1;
+        margin-bottom: 5px; }
+      .buses_slider_item_description span {
+        font-size: 14px;
+        line-height: 1.1; }
 
 .inert {
   padding-top: 110px;
