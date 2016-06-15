@@ -424,9 +424,18 @@ h3 {
   }
 
   &_slider {
+    padding: 0 40px;
+    text-align: justify;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
     &_item {
       @extend %outline;
       width: 270px;
+      display: inline-block;
 
       &_img {
         float: left;

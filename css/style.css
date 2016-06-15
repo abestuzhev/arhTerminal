@@ -295,28 +295,36 @@ h3 {
   height: 410px; }
   .buses_text_accent {
     background-color: #ffda01; }
-  .buses_slider_item {
-    width: 270px; }
-    .buses_slider_item_img {
-      float: left;
-      width: 146px;
-      height: 203px;
-      line-height: 0;
-      background: url("../img/buses-slide-1.png") no-repeat 0% 0%;
-      margin-right: 15px; }
-    .buses_slider_item_description {
-      display: table-cell;
-      height: 203px;
-      vertical-align: middle; }
-      .buses_slider_item_description h3 {
-        margin-bottom: 10px; }
-      .buses_slider_item_description p {
-        font-size: 18px;
-        line-height: 1.1;
-        margin-bottom: 5px; }
-      .buses_slider_item_description span {
-        font-size: 14px;
-        line-height: 1.1; }
+  .buses_slider {
+    padding: 0 40px;
+    text-align: justify; }
+    .buses_slider::after {
+      content: '';
+      display: inline-block;
+      width: 100%; }
+    .buses_slider_item {
+      width: 270px;
+      display: inline-block; }
+      .buses_slider_item_img {
+        float: left;
+        width: 146px;
+        height: 203px;
+        line-height: 0;
+        background: url("../img/buses-slide-1.png") no-repeat 0% 0%;
+        margin-right: 15px; }
+      .buses_slider_item_description {
+        display: table-cell;
+        height: 203px;
+        vertical-align: middle; }
+        .buses_slider_item_description h3 {
+          margin-bottom: 10px; }
+        .buses_slider_item_description p {
+          font-size: 18px;
+          line-height: 1.1;
+          margin-bottom: 5px; }
+        .buses_slider_item_description span {
+          font-size: 14px;
+          line-height: 1.1; }
 
 .inert {
   padding-top: 110px;
