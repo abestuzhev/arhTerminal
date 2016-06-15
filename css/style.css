@@ -6,7 +6,7 @@ ul {
   padding: 0;
   list-style: none; }
 
-.a-wrapp, .header, .header_logo, .header_nav, .home-slider, .how-it-work, .advantages, .advantages .advantages_list_item, .services, .services_list_item, .buses, .buses_slider_item, .inert, .area, .partners, .footer, .footer_left, .footer_left_logo {
+.a-wrapp, .header, .header_logo, .header_nav, .home-slider, .how-it-work, .advantages, .advantages .advantages_list_item, .services, .services_list_item, .buses, .inert, .area, .partners, .footer, .footer_left, .footer_left_logo {
   outline: 1px solid #ccc; }
 
 .header_call_btn a:hover, .home-slider_item_btn:hover {
@@ -229,6 +229,52 @@ h3 {
 
 .how-it-work {
   height: 410px; }
+  .how-it-work_top {
+    padding-top: 10px; }
+  .how-it-work_list {
+    padding: 50px 90px;
+    font-size: 0;
+    line-height: 0; }
+    .how-it-work_list_item {
+      width: 110px;
+      height: 140px;
+      margin-right: 26px;
+      display: inline-block;
+      box-sizing: border-box;
+      position: relative; }
+  .how-it-work .caption-top {
+    top: -70px; }
+  .how-it-work .how-line-right {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 136px;
+    height: 166px;
+    z-index: 1;
+    background: url("../img/how-line-1.png") no-repeat 0 0; }
+  .how-it-work .how-line-left {
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    width: 136px;
+    height: 166px;
+    z-index: 1;
+    background: url("../img/how-line-2.png") no-repeat 0 0; }
+  .how-it-work .caption_number {
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+    margin: 7px auto 3px;
+    width: 26px;
+    height: 26px;
+    background-color: #ffda01;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2; }
+  .how-it-work .caption_text {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center; }
 
 .advantages {
   background-color: #dbe6ea; }
@@ -291,8 +337,34 @@ h3 {
       line-height: 1.2;
       color: #7d7d7d; }
 
+.slick-prev::before,
+.slick-next::before {
+  content: ''; }
+
 .buses {
   height: 410px; }
+  .buses .slick-arrow {
+    border: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 18px;
+    height: 31px;
+    background: url(../img/arrows.png);
+    background-position: 0 0;
+    z-index: 1;
+    color: transparent; }
+    .buses .slick-arrow button {
+      color: transparent; }
+    .buses .slick-arrow:hover {
+      opacity: .8; }
+    .buses .slick-arrow.slick-prev {
+      left: 50%;
+      margin-left: -630px; }
+    .buses .slick-arrow.slick-next {
+      right: 50%;
+      margin-right: -630px;
+      background-position: -18px 0; }
   .buses_text_accent {
     background-color: #ffda01; }
   .buses_slider {
@@ -303,7 +375,8 @@ h3 {
       display: inline-block;
       width: 100%; }
     .buses_slider_item {
-      width: 280px;
+      padding: 0 2px;
+      width: 296px;
       display: inline-block; }
       .buses_slider_item_img {
         float: left;
@@ -369,7 +442,7 @@ h3 {
       line-height: 0; }
 
 .partners {
-  height: 245px; }
+  margin-bottom: 30px; }
   .partners_list_item {
     display: inline-block;
     padding-left: 9px;
@@ -383,6 +456,37 @@ h3 {
       top: 50%;
       left: 0;
       margin-top: -2px; }
+  .partners_slider {
+    padding: 20px 40px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; }
+    .partners_slider_item {
+      width: 200px;
+      vertical-align: middle; }
+      .partners_slider_item img {
+        line-height: 55px;
+        margin: auto; }
+  .partners .slick-arrow {
+    border: none;
+    position: absolute;
+    top: 50%;
+    width: 18px;
+    height: 31px;
+    background: url(../img/arrows.png);
+    background-position: 0 0;
+    z-index: 1;
+    color: transparent; }
+    .partners .slick-arrow button {
+      color: transparent; }
+    .partners .slick-arrow:hover {
+      opacity: .8; }
+    .partners .slick-arrow.slick-prev {
+      left: 50%;
+      margin-left: -630px; }
+    .partners .slick-arrow.slick-next {
+      right: 50%;
+      margin-right: -630px;
+      background-position: -18px 0; }
 
 .footer {
   position: relative;
