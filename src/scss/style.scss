@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-  font-size: 23px;
+  font-size: 22px;
   line-height: 1.2;
   margin: 0;
 }
@@ -434,7 +434,7 @@ h3 {
     }
     &_item {
       @extend %outline;
-      width: 270px;
+      width: 280px;
       display: inline-block;
 
       &_img {
@@ -442,7 +442,7 @@ h3 {
         width: 146px;
         height: 203px;
         line-height: 0;
-        background: url('../img/buses-slide-1.png') no-repeat 0% 0%;
+        // background: url('../img/buses-slide-1.png') no-repeat 0% 0%;
         margin-right: 15px;
       }
       &_description {

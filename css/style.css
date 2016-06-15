@@ -35,7 +35,7 @@ h2 {
   margin: 0; }
 
 h3 {
-  font-size: 23px;
+  font-size: 22px;
   line-height: 1.2;
   margin: 0; }
 
@@ -303,14 +303,13 @@ h3 {
       display: inline-block;
       width: 100%; }
     .buses_slider_item {
-      width: 270px;
+      width: 280px;
       display: inline-block; }
       .buses_slider_item_img {
         float: left;
         width: 146px;
         height: 203px;
         line-height: 0;
-        background: url("../img/buses-slide-1.png") no-repeat 0% 0%;
         margin-right: 15px; }
       .buses_slider_item_description {
         display: table-cell;
