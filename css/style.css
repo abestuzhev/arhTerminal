@@ -1,4 +1,4 @@
-.header_call_btn a:hover, .home-slider_item_btn:hover, .header_call_btn a, .home-slider_item_btn, .copyright_signature a, .copyright_signature a:hover {
+.header_call_btn a:hover, .home-slider_item_btn:hover, .header_submenu_item a, .header_submenu_item a:hover, .header_call_btn a, .home-slider_item_btn, .copyright_signature a, .copyright_signature a:hover {
   transition: all .1s ease-out; }
 
 ul {
@@ -7,7 +7,7 @@ ul {
   list-style: none; }
 
 .a-wrapp, .header, .header_logo, .header_nav, .home-slider, .how-it-work, .advantages, .advantages .advantages_list_item, .services, .services_list_item, .buses, .inert, .area, .partners, .footer, .footer_left, .footer_left_logo {
-  outline: 1px solid #ccc; }
+  outline: 1px solid transparent; }
 
 .header_call_btn a:hover, .home-slider_item_btn:hover {
   opacity: .8; }
@@ -98,7 +98,7 @@ h3 {
     .header_nav_contact {
       font-size: 14px;
       color: #ffda01;
-      margin-bottom: 10px; }
+      margin-bottom: 13px; }
       .header_nav_contact_email {
         padding-left: 32px;
         margin-right: 17px;
@@ -115,7 +115,8 @@ h3 {
   .header_menu {
     border-bottom: 1px solid #7d7d7d;
     text-align: justify;
-    line-height: 0; }
+    line-height: 0;
+    font-size: 0; }
     .header_menu::after {
       content: '';
       width: 100%;
@@ -127,12 +128,14 @@ h3 {
       .header_menu_item a {
         color: #fff;
         display: block;
-        padding: 5px 0;
+        padding: 5px 0 16px;
         text-decoration: none;
         font-size: 18px;
         line-height: 1.2; }
         .header_menu_item a:hover {
           color: #ffda01; }
+      .header_menu_item:hover .header_submenu {
+        display: block; }
       .header_menu_item_list {
         position: absolute;
         top: 14px;
@@ -141,6 +144,26 @@ h3 {
         height: 3px;
         background-color: red;
         background: url("../img/list-icon.png") no-repeat 50% 50%; }
+  .header_submenu {
+    width: 225px;
+    position: absolute;
+    top: 41px;
+    left: 50%;
+    margin-left: -100%;
+    background-color: #fff;
+    border: 1px solid #222021;
+    display: none; }
+    .header_submenu_item a {
+      text-align: left;
+      display: block;
+      padding: 10px 23px;
+      color: #222021;
+      font-size: 20px;
+      line-height: 1.2;
+      border-bottom: 1px solid #222021; }
+      .header_submenu_item a:hover {
+        color: #222021;
+        background-color: #ffda01; }
   .header_call {
     float: right;
     color: #ffda01; }
@@ -168,113 +191,126 @@ h3 {
       text-decoration: none;
       text-transform: uppercase; }
 
-.home-slider .slick-arrow {
-  border: none;
-  position: absolute;
-  top: 50%;
-  margin-top: -47px;
-  width: 45px;
-  height: 94px;
-  background: url(../img/slider-arrows.png);
-  background-position: 0 0;
-  z-index: 1;
-  color: transparent; }
-  .home-slider .slick-arrow button {
+.home-slider {
+  z-index: -3; }
+  .home-slider .slick-arrow {
+    border: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -47px;
+    width: 45px;
+    height: 94px;
+    background: url(../img/slider-arrows.png);
+    background-position: 0 0;
+    z-index: 1;
     color: transparent; }
-  .home-slider .slick-arrow:hover {
-    opacity: .8; }
-  .home-slider .slick-arrow.slick-prev {
-    left: 50%;
-    margin-left: -630px; }
-  .home-slider .slick-arrow.slick-next {
-    right: 50%;
-    margin-right: -630px;
-    background-position: -45px 0; }
-
-.home-slider_item {
-  height: 482px;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  cursor: pointer; }
-  .home-slider_item_description {
-    width: 570px;
-    position: absolute;
-    top: 65px;
-    left: 50%;
-    margin-left: -515px;
-    color: #fff; }
-    .home-slider_item_description h1 {
+    .home-slider .slick-arrow button {
+      color: transparent; }
+    .home-slider .slick-arrow:hover {
+      opacity: .8; }
+    .home-slider .slick-arrow.slick-prev {
+      left: 50%;
+      margin-left: -630px; }
+    .home-slider .slick-arrow.slick-next {
+      right: 50%;
+      margin-right: -630px;
+      background-position: -45px 0; }
+  .home-slider_item {
+    height: 482px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    cursor: pointer; }
+    .home-slider_item_description {
+      width: 570px;
+      position: absolute;
+      top: 65px;
+      left: 50%;
+      margin-left: -515px;
+      color: #fff; }
+      .home-slider_item_description h1 {
+        text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2); }
+    .home-slider_item_text {
+      margin: 0;
+      font-size: 23px;
+      line-height: 1.2;
       text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2); }
-  .home-slider_item_text {
-    margin: 0;
-    font-size: 23px;
-    line-height: 1.2;
-    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2); }
-  .home-slider_item_btn {
-    display: inline-block;
-    padding: 15px 35px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    opacity: .9;
-    background: #fde102;
-    background: linear-gradient(to bottom, #fde102 0%, #ee9b01 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde102', endColorstr='#ee9b01',GradientType=0 );
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-    margin-top: 15px; }
-
-.how-it-work {
-  height: 410px; }
-  .how-it-work_top {
-    padding-top: 10px; }
-  .how-it-work_list {
-    padding: 50px 90px;
-    font-size: 0;
-    line-height: 0; }
-    .how-it-work_list_item {
-      width: 110px;
-      height: 140px;
-      margin-right: 26px;
+    .home-slider_item_btn {
       display: inline-block;
-      box-sizing: border-box;
-      position: relative; }
-  .how-it-work .caption-top {
-    top: -70px; }
-  .how-it-work .how-line-right {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 136px;
-    height: 166px;
-    z-index: 1;
-    background: url("../img/how-line-1.png") no-repeat 0 0; }
-  .how-it-work .how-line-left {
-    position: absolute;
-    bottom: -90px;
-    left: 50%;
-    width: 136px;
-    height: 166px;
-    z-index: 1;
-    background: url("../img/how-line-2.png") no-repeat 0 0; }
-  .how-it-work .caption_number {
-    font-size: 14px;
-    text-align: center;
-    line-height: 26px;
-    margin: 7px auto 3px;
-    width: 26px;
-    height: 26px;
-    background-color: #ffda01;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2; }
-  .how-it-work .caption_text {
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center; }
+      padding: 15px 35px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-size: 25px;
+      opacity: .9;
+      background: #fde102;
+      background: linear-gradient(to bottom, #fde102 0%, #ee9b01 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde102', endColorstr='#ee9b01',GradientType=0 );
+      border-radius: 4px;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+      margin-top: 15px; }
+
+.how-it-work_top {
+  padding-top: 10px; }
+
+.how-it-work_list {
+  padding: 90px;
+  font-size: 0;
+  line-height: 0; }
+  .how-it-work_list_item {
+    width: 110px;
+    height: 140px;
+    margin-right: 26px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative; }
+
+.how-it-work_posbottom-3 {
+  bottom: -45px; }
+
+.how-it-work_posbottom-2 {
+  bottom: -25px; }
+
+.how-it-work .caption-top {
+  top: -70px; }
+
+.how-it-work .how-line-right {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 136px;
+  height: 166px;
+  z-index: 1;
+  background: url("../img/how-line-1.png") no-repeat 0 0; }
+
+.how-it-work .how-line-left {
+  position: absolute;
+  bottom: -89px;
+  left: 50%;
+  width: 136px;
+  height: 166px;
+  z-index: 1;
+  background: url("../img/how-line-2.png") no-repeat 0 0; }
+  .how-it-work .how-line-left--one {
+    bottom: -66px; }
+
+.how-it-work .caption_number {
+  font-size: 14px;
+  text-align: center;
+  line-height: 26px;
+  margin: 7px auto 3px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffda01;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2; }
+
+.how-it-work .caption_text {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center; }
 
 .advantages {
   background-color: #dbe6ea; }

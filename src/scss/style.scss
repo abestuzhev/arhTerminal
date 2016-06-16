@@ -114,7 +114,7 @@ h3 {
     &_contact {
       font-size: $description-small-text;
       color: $accent-color;
-      margin-bottom: 10px;
+      margin-bottom: 13px;
 
       &_email {
         padding-left: 32px;
@@ -139,6 +139,7 @@ h3 {
     border-bottom: 1px solid $description-small-color;
     text-align: justify;
     line-height: 0;
+    font-size: 0;
     // margin-bottom: 20px;
 
     &::after {
@@ -155,13 +156,17 @@ h3 {
       a {
         color: $default-color-light;
         display: block;
-        padding: 5px 0;
+        padding: 5px 0 16px;
         text-decoration: none;
         font-size: $description-big-text;
         line-height: 1.2;
         &:hover {
           color: $accent-color;
         }
+      }
+
+      &:hover .header_submenu {
+        display: block;
       }
 
       &_list {
@@ -172,6 +177,37 @@ h3 {
         height: 3px;
         background-color: red;
         background: url('../img/list-icon.png') no-repeat 50% 50%;
+      }
+    }
+  }
+
+  &_submenu {
+    width:225px;
+    position: absolute;
+    top: 41px;
+    left: 50%;
+    margin-left: -100%;
+    background-color: #fff;
+    border: 1px solid $default-color-dark;
+    display: none;
+
+    &_item {
+
+      a {
+        text-align: left;
+        display: block;
+        padding: 10px 23px;
+        color: $default-color-dark;
+        font-size: $default-size-text;
+        line-height: 1.2;
+        border-bottom: 1px solid $default-color-dark;
+        @extend %transition;
+
+        &:hover {
+          color: $default-color-dark;
+          background-color: $accent-color;
+          @extend %transition;
+        }
       }
     }
   }
@@ -220,6 +256,7 @@ h3 {
 
 .home-slider {
   @extend %outline;
+  z-index: -3;
 
   .slick-arrow {
     border:none;
@@ -301,21 +338,21 @@ h3 {
       &:hover {
         @extend %btn-hover;
       }
-
     }
   }
 } //END slider
 
 .how-it-work {
   @extend %outline;
-  height: 410px;
+  // height: 410px;
+  // padding-bottom: 45px;
 
   &_top {
     padding-top: 10px;
   }
 
   &_list {
-    padding: 50px 90px;
+    padding: 90px;
     font-size: 0;
     line-height: 0;
 
@@ -329,6 +366,14 @@ h3 {
       box-sizing: border-box;
       position: relative;
     }
+  }
+
+  &_posbottom-3 {
+    bottom:-45px;
+  }
+
+  &_posbottom-2 {
+    bottom:-25px;
   }
 
   .caption-top {
@@ -346,12 +391,16 @@ h3 {
   }
   .how-line-left {
     position: absolute;
-    bottom: -90px;
+    bottom: -89px;
     left: 50%;
     width: 136px;
     height: 166px;
     z-index: 1;
     background: url('../img/how-line-2.png')no-repeat 0 0;
+
+    &--one {
+      bottom:-66px;
+    }
   }
 
   .caption_number {
