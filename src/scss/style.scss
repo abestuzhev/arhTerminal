@@ -18,8 +18,6 @@ h1 {
   font-size: 100px;
   line-height: 1.1;
   margin:0;
-
-  // font: 5.4vw/5.5vw sans-serif;
 }
 
 h2 {
@@ -35,7 +33,6 @@ h3 {
 }
 
 .a-wrapp {
-  @extend %outline;
   width:1280px;
   margin: 0 auto;
   padding: 0 20px;
@@ -75,8 +72,6 @@ h3 {
 }
 
 .header {
-  @extend %outline;
-  // height: 77px;
   position: relative;
   z-index: -2;
   background-color: $default-color-dark;
@@ -93,13 +88,14 @@ h3 {
   }
 
   &_logo {
-    @extend %outline;
     float:left;
     width: 216px;
-    height: 76px;
+    height: 77px;
     background-color: $accent-color;
     background: url('../img/footer-logo-bg.png') repeat;
     line-height: 76px;
+    position: relative;
+    top: -1px;
 
     img {
       vertical-align: middle;
@@ -107,7 +103,6 @@ h3 {
   }
 
   &_nav {
-    @extend %outline;
     float: left;
     margin-left: 35px;
 
@@ -134,13 +129,11 @@ h3 {
       }
     }
   }
+
   &_menu {
-    // padding: 26px 0 16px;
-    border-bottom: 1px solid $description-small-color;
     text-align: justify;
     line-height: 0;
     font-size: 0;
-    // margin-bottom: 20px;
 
     &::after {
       content: '';
@@ -232,7 +225,6 @@ h3 {
       }
     }
     &_btn {
-      // margin-bottom: 8px;
       a {
         display: block;
         font-size: $description-default-text;
@@ -255,7 +247,6 @@ h3 {
 } //END header
 
 .home-slider {
-  @extend %outline;
   z-index: -3;
 
   .slick-arrow {
@@ -299,7 +290,6 @@ h3 {
     cursor: pointer;
 
   	&_description {
-      // @extend %outline;
   		width: 570px;
   		position: absolute;
   		top: 65px;
@@ -343,24 +333,18 @@ h3 {
 } //END slider
 
 .how-it-work {
-  @extend %outline;
-  // height: 410px;
-  // padding-bottom: 45px;
-
   &_top {
     padding-top: 10px;
   }
 
   &_list {
-    padding: 90px;
+    padding: 50px 90px 90px 90px;
     font-size: 0;
     line-height: 0;
 
     &_item {
-      // @extend %outline;
       width: 110px;
       height: 140px;
-      // background-color: red;
       margin-right: 26px;
       display: inline-block;
       box-sizing: border-box;
@@ -425,9 +409,6 @@ h3 {
 
 .advantages{
   background-color: #dbe6ea;
-  // padding: 20px;
-  @extend %outline;
-  // height: 420px;
 
   &_title {
     &::before {
@@ -444,8 +425,6 @@ h3 {
       margin-right: 23px;
       padding-left: 50px;
       position: relative;
-
-      @extend %outline;
 
       &::before {
         content: '';
@@ -475,11 +454,8 @@ h3 {
 } //END advantages
 
 .services{
-  @extend %outline;
-  // position: relative;
   padding-bottom: 100px;
   background: url('../img/services-bg.png') no-repeat 0 100%;
-  // height: 510px;
 
   &_list {
 
@@ -488,14 +464,12 @@ h3 {
       display: inline-block;
       margin-bottom: 30px;
       margin-right: 53px;
-      @extend %outline;
       vertical-align: top;
 
       &_title,
       &_text {
         margin-left: 87px;
       }
-
 
       &_title {
         margin-top: 7px;
@@ -508,7 +482,6 @@ h3 {
         text-align: center;
         width: 72px;
         height: 71px;
-        // line-height: 0;
         line-height: 71px;
 
         img {
@@ -531,7 +504,6 @@ h3 {
 }
 
 .buses{
-  @extend %outline;
   height: 410px;
 
   .slick-arrow {
@@ -582,7 +554,6 @@ h3 {
       width: 100%;
     }
     &_item {
-      // @extend %outline;
       padding: 0 2px;
       width: 296px;
       display: inline-block;
@@ -592,7 +563,6 @@ h3 {
         width: 146px;
         height: 203px;
         line-height: 0;
-        // background: url('../img/buses-slide-1.png') no-repeat 0% 0%;
         margin-right: 15px;
       }
       &_description {
@@ -620,8 +590,6 @@ h3 {
 } //END buses
 
 .inert{
-  @extend %outline;
-  // height: 535px;
   padding-top: 110px;
   background: url('../img/inert-bg.png') no-repeat 0% 0%;
   line-height: 0;
@@ -653,7 +621,6 @@ h3 {
     &_title {
       font-size: $advantage-size-text;
       line-height: 1.2;
-      // margin-left: 166px;
       display: table-cell;
       vertical-align: middle;
       padding-left: 20px;
@@ -662,7 +629,6 @@ h3 {
 } //END inert
 
 .area{
-  @extend %outline;
   height: 660px;
   background: url('../img/area-bg.png') no-repeat 0% 100%;
 
@@ -688,9 +654,7 @@ h3 {
 } //END area
 
 .partners{
-  @extend %outline;
   margin-bottom: 30px;
-  // height: 245px;
 
   &_list {
     &_item {
@@ -719,11 +683,9 @@ h3 {
     &_item {
       width: 200px;
       vertical-align: middle;
-      // display: inline-block;
 
       img {
         line-height: 55px;
-        // text-align: center;
         margin: auto;
       }
     }
@@ -733,7 +695,6 @@ h3 {
     border:none;
 		position: absolute;
 		top: 50%;
-		// margin-top: -15px;
 		width: 18px;
 		height: 31px;
 		background: url(../img/arrows.png);
@@ -763,8 +724,6 @@ h3 {
 } //END partners
 
 .footer{
-  @extend %outline;
-  // height: 305px;
   position: relative;
   z-index:-2;
   background: $light-color-dark;
@@ -787,12 +746,10 @@ h3 {
   &_left {
     float: left;
     width: 216px;
-    @extend %outline;
     margin-bottom: 25px;
 
     &_logo {
       margin-bottom: 20px;
-      @extend %outline;
       background-color: $accent-color;
       background: url('../img/footer-logo-bg.png') repeat-x;
       line-height: 76px;
@@ -824,9 +781,6 @@ h3 {
         span {
           color: $accent-color;
         }
-      }
-
-      &_text {
       }
     }
   }
@@ -883,10 +837,8 @@ h3 {
     a {
       color: #c1c1c1;
       font-weight: 700;
-      @extend %transition;
 
       &:hover {
-        @extend %transition;
         text-decoration: none;
       }
     }

@@ -1,13 +1,10 @@
-.header_call_btn a:hover, .home-slider_item_btn:hover, .header_submenu_item a, .header_submenu_item a:hover, .header_call_btn a, .home-slider_item_btn, .copyright_signature a, .copyright_signature a:hover {
+.header_call_btn a:hover, .home-slider_item_btn:hover, .header_submenu_item a, .header_submenu_item a:hover, .header_call_btn a, .home-slider_item_btn {
   transition: all .1s ease-out; }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none; }
-
-.a-wrapp, .header, .header_logo, .header_nav, .home-slider, .how-it-work, .advantages, .advantages .advantages_list_item, .services, .services_list_item, .buses, .inert, .area, .partners, .footer, .footer_left, .footer_left_logo {
-  outline: 1px solid transparent; }
 
 .header_call_btn a:hover, .home-slider_item_btn:hover {
   opacity: .8; }
@@ -86,10 +83,12 @@ h3 {
   .header_logo {
     float: left;
     width: 216px;
-    height: 76px;
+    height: 77px;
     background-color: #ffda01;
     background: url("../img/footer-logo-bg.png") repeat;
-    line-height: 76px; }
+    line-height: 76px;
+    position: relative;
+    top: -1px; }
     .header_logo img {
       vertical-align: middle; }
   .header_nav {
@@ -113,7 +112,6 @@ h3 {
           height: 14px;
           background: url("../img/header-email.png") no-repeat 0% 0%; }
   .header_menu {
-    border-bottom: 1px solid #7d7d7d;
     text-align: justify;
     line-height: 0;
     font-size: 0; }
@@ -255,7 +253,7 @@ h3 {
   padding-top: 10px; }
 
 .how-it-work_list {
-  padding: 90px;
+  padding: 50px 90px 90px 90px;
   font-size: 0;
   line-height: 0; }
   .how-it-work_list_item {
