@@ -36,8 +36,14 @@ h3 {
   line-height: 1.2;
   margin: 0; }
 
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  /* for ie 8 */ }
+
 .a-wrapp {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px; }
   .a-wrapp::before, .a-wrapp::after {
@@ -322,6 +328,8 @@ h3 {
     margin-right: 23px;
     padding-left: 50px;
     position: relative; }
+    .advantages .advantages_list_item:nth-child(3n) {
+      margin-right: 0; }
     .advantages .advantages_list_item::before {
       content: '';
       display: block;
@@ -605,16 +613,33 @@ h3 {
       .copyright_signature a:hover {
         text-decoration: none; }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 85em) {
   .a-wrapp {
-    width: 95%;
-    padding: 0;
-    margin: 0;
+    max-width: 100%;
+    padding: 0 10px;
     box-sizing: border-box; }
-  .h2_wrapp {
-    text-align: left; } }
+  .how-it-work {
+    text-align: center; }
+  .how-it-work_list {
+    display: inline-block;
+    padding: 50px 0 90px; }
+  .advantages .advantages_list_item {
+    width: 42%; }
+  .advantages .advantages_list_item:nth-child(3n) {
+    margin-right: 23px; }
+  .advantages .advantages_list_item:nth-child(2n) {
+    margin-right: 0px; } }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 54em) {
+  .advantages .advantages_list_item,
+  .services .services_list_item {
+    width: 90%;
+    margin-right: 0; }
+  .h2-title {
+    font-size: 25px;
+    margin: 25px 0 20px; } }
+
+@media screen and (max-width: 46em) {
   .advantages .advantages_list_item,
   .services .services_list_item {
     width: 90%;
