@@ -565,6 +565,7 @@ img {
   .footer_right {
     box-sizing: border-box;
     margin-left: 284px;
+    padding: 26px 0 16px;
     margin-bottom: 25px; }
     .footer_right_contact {
       display: inline-block;
@@ -577,8 +578,9 @@ img {
         margin: 0; }
         .footer_right_contact p span {
           color: #ffda01; }
+      .footer_right_contact .adress-index {
+        color: #fff; }
   .footer_menu {
-    padding: 26px 0 16px;
     border-bottom: 1px solid #7d7d7d;
     text-align: justify;
     line-height: 0;
@@ -662,8 +664,21 @@ img {
   .inert_advantage {
     width: 70%;
     margin-left: 0%; }
-  .footer_right {
-    margin-left: 264px; } }
+  .footer_menu {
+    border: none;
+    width: 27%;
+    margin-right: 40px;
+    float: left; }
+  .footer_menu_item {
+    display: block; }
+  .footer_right_contact {
+    display: block; }
+  .footer-bg {
+    background-position: 100% 80%; }
+  .footer_right_contact {
+    margin: 0; }
+  .footer_right_text {
+    margin-top: 30px; } }
 
 @media screen and (max-width: 54em) {
   .advantages .advantages_list_item {
@@ -677,7 +692,14 @@ img {
   .inert_advantage_title {
     font-size: 17px;
     font-weight: bold;
-    line-height: 1.2; } }
+    line-height: 1.2; }
+  .footer_menu {
+    border: none;
+    width: 27%;
+    margin-right: 10px;
+    float: left; }
+  .footer_right {
+    margin-left: 254px; } }
 
 @media screen and (max-width: 46em) {
   .advantages .advantages_list_item {
@@ -685,13 +707,45 @@ img {
     margin-right: 0; }
   .h2-title {
     font-size: 25px;
-    margin: 25px 0 20px; } }
+    margin: 25px 0 20px; }
+  .footer_menu {
+    display: none; } }
 
 @media screen and (max-width: 39em) {
   .services .services_list_item {
     width: 90%;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .footer-bg {
+    background-position: 100% 115%; }
+  .adress-index {
+    display: none; }
+  .footer_left {
+    width: 100%;
+    float: none;
+    margin: 0; }
+  .footer_left_logo {
+    margin: 0; }
+  .footer_left_list {
+    display: none; }
+  .footer_right {
+    margin: 0;
+    padding-bottom: 90px; }
+  .footer_right_text {
+    display: none; }
+  .footer .logo_line {
+    right: 0; }
+  .footer_left_logo {
+    text-align: center; }
+  .copyright {
+    font-size: 16px;
+    line-height: 1.2; } }
 
 @media screen and (max-width: 30em) {
   .services_list_item_title {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  .copyright {
+    text-align: center;
+    padding: 15px 0; }
+  .copyright_text,
+  .copyright_signature {
+    float: none; } }

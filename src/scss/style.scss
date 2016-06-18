@@ -780,6 +780,7 @@ img {
     // max-width:996px;
     // width: 100%;
     margin-left: 284px;
+    padding: 26px 0 16px;
     margin-bottom: 25px;
 
     &_contact {
@@ -797,12 +798,14 @@ img {
           color: $accent-color;
         }
       }
+      .adress-index {
+        color: #fff;
+      }
     }
   }
 
 
   &_menu {
-    padding: 26px 0 16px;
     border-bottom: 1px solid $description-small-color;
     text-align: justify;
     line-height: 0;
