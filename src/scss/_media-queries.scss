@@ -1,6 +1,6 @@
 @media screen and (max-width: 85em) {
   .a-wrapp {
-    max-width: 100%;
+    width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
   }
@@ -32,6 +32,24 @@
   .services_list_item:nth-child(3n) {
     margin-right: 0px;
   }
+
+  //buses
+  .buses_slider {
+    padding: 0 60px;
+  }
+  .buses_slider_item {
+    width:250px;
+  }
+
+  //inert
+  .inert_advantage {
+    margin-left: 5%;
+  }
+
+  //footer
+  .footer_right {
+    margin-left: 264px;
+  }
 }
 
 @media screen and (max-width: 67em) { //1060px
@@ -53,6 +71,20 @@
   .services_list_item:nth-child(2n) {
     margin-right: 0%;
   }
+
+  //inert
+  .inert {
+    background-position: 60% 100%;
+  }
+  .inert_advantage {
+    width:70%;
+    margin-left: 0%;
+  }
+
+  //footer
+  .footer_right {
+    gthtbvtyjdf
+  }
 }
 
 @media screen and (max-width: 54em) { //860px
@@ -64,6 +96,16 @@
   .h2-title {
     font-size: $mobile-size-title;
     margin: 25px 0 20px;
+  }
+
+  //inert
+  .inert_advantage {
+    margin-bottom: 50px;
+  }
+  .inert_advantage_title {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.2;
   }
 }
 @media screen and (max-width: 46em) {
