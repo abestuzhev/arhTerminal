@@ -6,37 +6,40 @@ $(document).ready(function(){
 		arrows: true,
 		infinite: true,
 		speed: 500,
-		adaptiveHeight: false,
+		adaptiveHeight: true,
+     centerMode: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		fade: true,
 		cssEase: 'linear'
   });
 
-  $('.buses_slider').slick({
+  if ($(document).width() > 1036) {
+    $('.buses_slider').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+      {
+        breakpoint: 1360,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 1060,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
+    })
+  };
 
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    // variableWidth: true
-    responsive: [
-    {
-      breakpoint: 1360,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3
-      }
-    },
-    {
-      breakpoint: 1060,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    }
-  ]
-  });
+
 
   $('.partners_slider').slick({
     autoplay: false,

@@ -108,38 +108,35 @@ img {
     }
   }
 
-  &_nav {
-    float: left;
-    margin-left: 35px;
+  &_contact {
+    font-size: $description-small-text;
+    color: $accent-color;
+    margin-bottom: 13px;
+    margin: 15px 170px 0 236px;
 
-    &_contact {
-      font-size: $description-small-text;
-      color: $accent-color;
-      margin-bottom: 13px;
+    &_email {
+      padding-left: 32px;
+      margin-right: 17px;
+      position: relative;
+      text-decoration: underline;
 
-      &_email {
-        padding-left: 32px;
-        margin-right: 17px;
-        position: relative;
-        text-decoration: underline;
-
-        &::before {
-          content: '';
-          position: absolute;
-          top:1px;
-          left:0;
-          width: 19px;
-          height: 14px;
-          background: url('../img/header-email.png') no-repeat 0% 0%;
-        }
+      &::before {
+        content: '';
+        position: absolute;
+        top:1px;
+        left:0;
+        width: 19px;
+        height: 14px;
+        background: url('../img/header-email.png') no-repeat 0% 0%;
       }
     }
-  }
+  } //end header_nuv
 
   &_menu {
     text-align: justify;
     line-height: 0;
     font-size: 0;
+    margin: 0px 170px 0 236px;
 
     &::after {
       content: '';
@@ -294,6 +291,7 @@ img {
   	background-position: 50% 50%;
   	background-size: cover;
     cursor: pointer;
+    background-size: cover;
 
   	&_description {
   		width: 570px;

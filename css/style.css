@@ -97,30 +97,29 @@ img {
     top: -1px; }
     .header_logo img {
       vertical-align: middle; }
-  .header_nav {
-    float: left;
-    margin-left: 35px; }
-    .header_nav_contact {
-      font-size: 14px;
-      color: #ffda01;
-      margin-bottom: 13px; }
-      .header_nav_contact_email {
-        padding-left: 32px;
-        margin-right: 17px;
-        position: relative;
-        text-decoration: underline; }
-        .header_nav_contact_email::before {
-          content: '';
-          position: absolute;
-          top: 1px;
-          left: 0;
-          width: 19px;
-          height: 14px;
-          background: url("../img/header-email.png") no-repeat 0% 0%; }
+  .header_contact {
+    font-size: 14px;
+    color: #ffda01;
+    margin-bottom: 13px;
+    margin: 15px 170px 0 236px; }
+    .header_contact_email {
+      padding-left: 32px;
+      margin-right: 17px;
+      position: relative;
+      text-decoration: underline; }
+      .header_contact_email::before {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 19px;
+        height: 14px;
+        background: url("../img/header-email.png") no-repeat 0% 0%; }
   .header_menu {
     text-align: justify;
     line-height: 0;
-    font-size: 0; }
+    font-size: 0;
+    margin: 0px 170px 0 236px; }
     .header_menu::after {
       content: '';
       width: 100%;
@@ -225,7 +224,8 @@ img {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    cursor: pointer; }
+    cursor: pointer;
+    background-size: cover; }
     .home-slider_item_description {
       width: 570px;
       position: absolute;
@@ -646,7 +646,23 @@ img {
   .footer_right {
     margin-left: 264px; } }
 
+@media screen and (max-width: 78.5em) {
+  .header_menu {
+    margin: 92px 5% 0; }
+  .header_contact {
+    float: right;
+    margin: 20px;
+    margin-right: 20px; }
+  .header_contact::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .header_contact_email {
+    display: block; } }
+
 @media screen and (max-width: 67em) {
+  .header_menu {
+    margin: 92px 0% 0; }
   .advantages .advantages_list_item {
     width: 42%;
     margin-right: 23px; }
@@ -681,6 +697,9 @@ img {
     margin-top: 30px; } }
 
 @media screen and (max-width: 54em) {
+  .header_menu,
+  .header_contact {
+    display: none; }
   .advantages .advantages_list_item {
     width: 90%;
     margin-right: 0; }
