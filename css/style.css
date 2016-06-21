@@ -631,7 +631,12 @@ img {
     right: 2%;
     margin-right: 0; }
   .home-slider .slick-arrow.slick-prev {
-    margin-right: 0; }
+    left: 2%;
+    margin-left: 0; }
+  .slick-slider {
+    position: static; }
+  .home-slider .slick-arrow {
+    top: 8%; }
   .how-it-work {
     text-align: center; }
   .how-it-work_list {
