@@ -473,8 +473,7 @@ img {
 
 .area {
   padding-bottom: 150px;
-  background: url("../img/area-bg.png") no-repeat 0% 100%;
-  background-size: cover; }
+  background: url("../img/area-bg.png") no-repeat 0% 100%; }
   .area .h2-title {
     margin: 40px 0; }
   .area_text {
@@ -636,6 +635,9 @@ img {
     margin-right: 2%; }
   .advantages .advantages_list_item:nth-child(3n) {
     margin-right: 23px; }
+  .area {
+    width: 100%;
+    background-position: 50% 100%; }
   .services_list_item {
     width: 30%;
     margin-right: 4%; }
