@@ -14,30 +14,8 @@ $(document).ready(function(){
 		cssEase: 'linear'
   });
 
-  if ($(document).width() > 1036) {
-    $('.buses_slider').slick({
-      infinite: true,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      responsive: [
-      {
-        breakpoint: 1360,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
-        }
-      },
-      {
-        breakpoint: 1060,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      }
-    ]
-    })
-  };
+
+
 
 
 
@@ -89,4 +67,37 @@ $(document).ready(function(){
     }
   ]
   });
+
+  if ($(window).width() > 700) {
+    $('.buses_slider').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+      {
+        breakpoint: 1360,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 1060,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 724,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  })
+  }
+
 });

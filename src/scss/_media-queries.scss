@@ -189,7 +189,7 @@
   }
   //buses
 
-  
+
 
   //footer
   .footer_menu {
@@ -203,6 +203,23 @@
     margin-right: 0;
   }
 
+  //inert
+  .inert {
+    padding-bottom: 30px;
+  }
+
+  //area
+  .area_foto {
+    width: 100%;
+  }
+  .area_foto_item {
+    width: 48%;
+    margin: 10px 2% 0 0;
+  }
+  .area_foto_item img {
+    width:100%;
+    height: auto;
+  }
   //footer
   .footer-bg {
     background-position: 100% 115%;
@@ -263,4 +280,28 @@
   .copyright_signature {
     float: none;
   }
+}
+@media screen and (max-width: 415px) { //415px
+  //area
+  .area {
+    background: url('../img/area-bg-mobile.png') no-repeat;
+    background-position: 75% 110%;
+  }
+  
+  .area_foto {
+    width: 100%;
+  }
+  .area_foto_item {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .area_foto_item img {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 20em) { //320px
+  //area
+
 }
