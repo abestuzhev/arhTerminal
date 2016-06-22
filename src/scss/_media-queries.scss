@@ -133,6 +133,10 @@
     font-size: 8.4vw;
   }
 
+  //area
+  .area {
+    background: url("../img/area-bg-mobile.png") no-repeat 50% 100%;
+  }
   .services_list_item {
     width:44%;
     margin-right: 4%;
@@ -268,6 +272,10 @@
   }
 
   //area
+  .area {
+    background-position: 85% 110%;
+  }
+
   .area_foto {
     width: 100%;
   }
@@ -352,7 +360,6 @@
 @media screen and (max-width: 415px) { //415px
   //area
   .area {
-    background: url('../img/area-bg-mobile.png') no-repeat;
     background-position: 75% 110%;
   }
 

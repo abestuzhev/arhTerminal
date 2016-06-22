@@ -475,12 +475,13 @@ img {
 
 .area {
   padding-bottom: 150px;
-  background: url("../img/area-bg.png") no-repeat 0% 100%; }
+  background: url("../img/area-bg.png") no-repeat 50% 100%; }
   .area .h2-title {
     margin: 40px 0; }
   .area_text {
     width: 585px; }
   .area_list {
+    width: 50%;
     font-size: 16px;
     line-height: 1.2;
     margin-bottom: 40px; }
@@ -691,6 +692,8 @@ img {
     font-size: 110px;
     /* Some tweener fallback that doesn't look awful */
     font-size: 8.4vw; }
+  .area {
+    background: url("../img/area-bg-mobile.png") no-repeat 50% 100%; }
   .services_list_item {
     width: 44%;
     margin-right: 4%; }
@@ -769,6 +772,8 @@ img {
     margin-right: 0; }
   .inert {
     padding-bottom: 30px; }
+  .area {
+    background-position: 85% 110%; }
   .area_foto {
     width: 100%; }
   .area_foto_item {
@@ -819,7 +824,6 @@ img {
 
 @media screen and (max-width: 415px) {
   .area {
-    background: url("../img/area-bg-mobile.png") no-repeat;
     background-position: 75% 110%; }
   .area_foto {
     width: 100%; }
