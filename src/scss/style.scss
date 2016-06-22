@@ -361,48 +361,30 @@ img {
 
     &_item {
       width: 110px;
-      height: 140px;
+      // height: 140px;
       margin-right: 26px;
       display: inline-block;
       box-sizing: border-box;
       position: relative;
+
+      .caption_text {
+        font-size: $default-size-text;
+        line-height: 1.2;
+        text-align: center;
+        position: absolute;
+        left:9%;
+      }
     }
-  }
-
-  &_posbottom-3 {
-    bottom:-45px;
-  }
-
-  &_posbottom-2 {
-    bottom:-25px;
   }
 
   .caption-top {
-    top:-70px;
-  }
+    top:-44px;
 
-  .how-line-right {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 136px;
-    height: 166px;
-    z-index: 1;
-    background: url('../img/how-line-1.png')no-repeat 0 0;
-  }
-  .how-line-left {
-    position: absolute;
-    bottom: -89px;
-    left: 50%;
-    width: 136px;
-    height: 166px;
-    z-index: 1;
-    background: url('../img/how-line-2.png')no-repeat 0 0;
-
-    &--one {
-      bottom:-66px;
+    .caption_text {
+      bottom: 100%;
     }
   }
+}
 
   .caption_number {
     font-size: $description-small-text;
@@ -414,13 +396,26 @@ img {
     background-color: $accent-color;
     border-radius: 50%;
     position: relative;
-    z-index: 2
-  }
+    z-index: 2;
 
-  .caption_text {
-    font-size: $default-size-text;
-    line-height: 1.2;
-    text-align: center;
+    .how-line-right {
+      position: absolute;
+      bottom: 50%;
+      left: 100%;
+      width: 123px;
+      height: 166px;
+      z-index: 1;
+      background: url('../img/how-line-1.png')no-repeat 100% 100%;
+    }
+
+    .how-line-left {
+      position: absolute;
+      top: 47%;
+      left: 50%;
+      width: 136px;
+      height: 166px;
+      z-index: 1;
+      background: url('../img/how-line-2.png')no-repeat 0 0;
   }
 } //END how-it-work
 

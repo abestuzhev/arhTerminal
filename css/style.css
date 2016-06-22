@@ -273,50 +273,48 @@ img {
     line-height: 0; }
     .how-it-work_list_item {
       width: 110px;
-      height: 140px;
       margin-right: 26px;
       display: inline-block;
       box-sizing: border-box;
       position: relative; }
-  .how-it-work_posbottom-3 {
-    bottom: -45px; }
-  .how-it-work_posbottom-2 {
-    bottom: -25px; }
+      .how-it-work_list_item .caption_text {
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        position: absolute;
+        left: 9%; }
   .how-it-work .caption-top {
-    top: -70px; }
-  .how-it-work .how-line-right {
+    top: -44px; }
+    .how-it-work .caption-top .caption_text {
+      bottom: 100%; }
+
+.caption_number {
+  font-size: 14px;
+  text-align: center;
+  line-height: 26px;
+  margin: 7px auto 3px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffda01;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2; }
+  .caption_number .how-line-right {
     position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 136px;
+    bottom: 50%;
+    left: 100%;
+    width: 123px;
     height: 166px;
     z-index: 1;
-    background: url("../img/how-line-1.png") no-repeat 0 0; }
-  .how-it-work .how-line-left {
+    background: url("../img/how-line-1.png") no-repeat 100% 100%; }
+  .caption_number .how-line-left {
     position: absolute;
-    bottom: -89px;
+    top: 47%;
     left: 50%;
     width: 136px;
     height: 166px;
     z-index: 1;
     background: url("../img/how-line-2.png") no-repeat 0 0; }
-    .how-it-work .how-line-left--one {
-      bottom: -66px; }
-  .how-it-work .caption_number {
-    font-size: 14px;
-    text-align: center;
-    line-height: 26px;
-    margin: 7px auto 3px;
-    width: 26px;
-    height: 26px;
-    background-color: #ffda01;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2; }
-  .how-it-work .caption_text {
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center; }
 
 .advantages {
   background-color: #dbe6ea; }
