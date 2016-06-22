@@ -23,13 +23,12 @@
     margin-left: 0;
   }
   .slick-slider {
-    position: static;
+    // position: static;
   }
 
   .home-slider .slick-arrow {
-    top: 8%;
+    // top: 8%;
   }
-
 
   // .h2_wrapp {
   //   text-align: left;
@@ -103,6 +102,16 @@
   .header_contact_email {
     display: block;;
   }
+
+  .home-slider .slick-arrow {
+    // top: 9%;
+  }
+
+  .home-slider_item_description {
+    margin-left: 0;
+    left:10%;
+  }
+
 }
 
 @media screen and (max-width: 67em) { //1060px
@@ -117,6 +126,11 @@
   }
   .advantages .advantages_list_item:nth-child(2n) {
     margin-right: 0px;
+  }
+
+  .home-slider_item_description h1{
+    font-size: 110px; /* Some tweener fallback that doesn't look awful */
+    font-size: 8.4vw;
   }
 
   .services_list_item {
@@ -172,6 +186,24 @@
   .header_menu,
   .header_contact {
     display: none;
+  }
+
+  .slick-arrow,
+  .home-slider button {
+    display: none;
+  }
+
+  .home-slider_item_text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .home-slider_item {
+    height: 450px;
+  }
+
+  .home-slider_item_description {
+    width: 445px;
   }
 
   .advantages .advantages_list_item {
@@ -294,6 +326,15 @@
 }
 
 @media screen and (max-width: 30em) { //480px
+  .home-slider_item_description {
+    width: 345px;
+    left:2%;
+  }
+  .home-slider_item_description h1{
+    font-size: 1.9em;
+    // line-height: 2.3;
+  }
+
   .services_list_item_title {
     margin-top: 0px;
   }
@@ -328,7 +369,9 @@
     height: auto;
   }
 }
+
+
 @media screen and (max-width: 20em) { //320px
-  //area
+  //home-slider
 
 }

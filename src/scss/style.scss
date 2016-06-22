@@ -285,7 +285,7 @@ img {
 	}
 
   &_item {
-  	height: 482px;
+  	height: 590px;
   	overflow: hidden;
   	background-repeat: no-repeat;
   	background-position: 50% 50%;
@@ -301,8 +301,10 @@ img {
       margin-left: -515px;
       color: #fff;
 
+
       h1 {
         text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
       }
   	}
 
@@ -337,6 +339,17 @@ img {
 } //END slider
 
 .how-it-work {
+  position: relative;
+
+  .slider-bg {
+    position: absolute;
+    top:-151px;
+    left: 0;
+    height: 151px;
+    width: 100%;
+    background: url('../img/slider-bg.png') no-repeat 50% 100%;
+  }
+
   &_top {
     padding-top: 10px;
   }

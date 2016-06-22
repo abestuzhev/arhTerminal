@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.home-slider').slick({
-    autoplay: true,
+    autoplay: false,
 		autoplaySpeed: 5000,
 		dots: false,
 		arrows: true,
@@ -11,7 +11,8 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		fade: true,
-		cssEase: 'linear'
+		cssEase: 'linear',
+    zIndex: 2
   });
 
 
