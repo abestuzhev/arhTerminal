@@ -676,7 +676,9 @@ img {
     display: block; }
   .home-slider_item_description {
     margin-left: 0;
-    left: 10%; } }
+    left: 10%; }
+  .how-it-work_list_item {
+    margin-bottom: 40px; } }
 
 @media screen and (max-width: 67em) {
   .header_menu {
