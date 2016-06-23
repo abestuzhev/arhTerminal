@@ -327,13 +327,27 @@
   }
   .how-it-work_list_item {
     width: 100%;
+    outline: 1px solid #eee;
+  }
+
+  .how-it-work_top {
+    padding-top: 0;
   }
 
   .how-it-work_list_item .caption_text{
     text-align: left;
-    width: 100%;
     margin: 0;
     position: static;
+  }
+
+  .how-it-work .caption-top {
+    top:0;
+  }
+
+  .how_img,
+  .caption_number,
+  .caption_text {
+    display: inline-block;
   }
 
   //footer
