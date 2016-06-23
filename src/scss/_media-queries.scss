@@ -327,6 +327,7 @@
   }
   .how-it-work_list_item {
     width: 100%;
+    vertical-align: top;
     outline: 1px solid #eee;
   }
 
@@ -337,7 +338,14 @@
   .how-it-work_list_item .caption_text{
     text-align: left;
     margin: 0;
+    width: auto;
     position: static;
+  }
+
+  .how-it-work_list_item::after {
+    content: '';
+    display: table;
+    clear: both;
   }
 
   .how-it-work .caption-top {
@@ -349,6 +357,13 @@
   .caption_text {
     display: inline-block;
   }
+
+  // .how_img {
+  //   float: left;
+  // }
+  // .caption_text {
+  //   float: right;
+  // }
 
   //footer
   .footer-bg {

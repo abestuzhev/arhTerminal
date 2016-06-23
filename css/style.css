@@ -808,13 +808,19 @@ img {
     width: 50%; }
   .how-it-work_list_item {
     width: 100%;
+    vertical-align: top;
     outline: 1px solid #eee; }
   .how-it-work_top {
     padding-top: 0; }
   .how-it-work_list_item .caption_text {
     text-align: left;
     margin: 0;
+    width: auto;
     position: static; }
+  .how-it-work_list_item::after {
+    content: '';
+    display: table;
+    clear: both; }
   .how-it-work .caption-top {
     top: 0; }
   .how_img,
