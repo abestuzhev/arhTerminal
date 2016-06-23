@@ -355,9 +355,13 @@ img {
   }
 
   &_list {
-    padding: 50px 90px 90px 90px;
+    padding: 80px 90px 100px 90px;
     font-size: 0;
     line-height: 0;
+
+    .how-it-work_block {
+      display: inline-block;
+    }
 
     &_item {
       width: 110px;
@@ -371,8 +375,11 @@ img {
         font-size: $default-size-text;
         line-height: 1.2;
         text-align: center;
+        width: 167px;
+        margin-left: -28px;
         position: absolute;
-        left:9%;
+        left:0;
+        right: 0;
       }
     }
   }
@@ -406,6 +413,7 @@ img {
       height: 166px;
       z-index: 1;
       background: url('../img/how-line-1.png')no-repeat 100% 100%;
+
     }
 
     .how-line-left {
