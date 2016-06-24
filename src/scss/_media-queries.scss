@@ -356,6 +356,16 @@
   .caption_number,
   .caption_text {
     display: inline-block;
+    vertical-align: middle;
+  }
+
+  .caption_number,
+  .caption_text {
+    margin-left:8px;
+  }
+
+  .caption_text {
+    width: 110px;
   }
 
   // .how_img {

@@ -826,7 +826,13 @@ img {
   .how_img,
   .caption_number,
   .caption_text {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle; }
+  .caption_number,
+  .caption_text {
+    margin-left: 8px; }
+  .caption_text {
+    width: 110px; }
   .footer-bg {
     background-position: 100% 115%; }
   .adress-index {
