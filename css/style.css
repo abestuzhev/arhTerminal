@@ -792,6 +792,9 @@ img {
     padding-bottom: 30px; }
   .area {
     background-position: 85% 110%; }
+  .area_text,
+  .area_list {
+    width: 100%; }
   .area_foto {
     width: 100%; }
   .area_foto_item {
@@ -896,6 +899,22 @@ img {
     float: none; } }
 
 @media screen and (max-width: 415px) {
+  .header_logo {
+    float: none; }
+  .header .logo_line {
+    right: auto; }
+  .header_call {
+    margin: 8px 0;
+    float: none;
+    text-align: center; }
+  .header_call_number,
+  .header_call_btn {
+    display: inline-block; }
+  .header_call_btn a {
+    padding: 8px 10px; }
+  .header_call_number {
+    margin-right: 10px;
+    font-size: 17px; }
   .area {
     background-position: 75% 110%; }
   .area_foto {
