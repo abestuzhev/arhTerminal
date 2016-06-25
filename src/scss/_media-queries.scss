@@ -68,7 +68,7 @@
     padding: 0 60px;
   }
   .buses_slider_item {
-    width:250px;
+    // width:250px;
   }
 
   //inert
@@ -197,17 +197,23 @@
   }
 }
 
+/*860px*/
+/**********************************************************************************/
 @media screen and (max-width: 54em) { //860px
   //header
-  .header_menu,
   .header_contact {
-    display: none;
+    // display: none;
   }
 
-  .slick-arrow,
-  .home-slider button {
-    display: none;
+
+  .header_menu {
+    text-align: center;
   }
+
+  // .slick-arrow,
+  // .home-slider button {
+  //   display: none;
+  // }
 
   .home-slider_item_text {
     font-size: 18px;
@@ -263,6 +269,14 @@
     margin: 25px 0 20px;
   }
   //buses
+  .buses_slider {
+    padding: 0;
+  }
+  .buses_slider_item {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
 
   //how-it-work
   .how-line-none {
@@ -271,15 +285,141 @@
   .how-it-work_list_item:nth-child(4n) {
     margin-right: 0;
   }
-
-
   //footer
   .footer_menu {
     display: none;
   }
+
+}
+/*688px*/
+/**********************************************************************************/
+@media screen and (max-width: 43em) { //688px
+  .header_contact,
+  .header_menu {
+    display: none;
+  }
+  .header_menu-mobile {
+    display: block;
+  }
+
+  .header_call {
+    margin-right: 10px;
+  }
+
+  .header_menu {
+    // display: block;
+    position: absolute;
+    z-index: 300;
+    left: 0;
+    top: 76px;
+    text-align: left;
+    background-color: $default-color-dark;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header_menu_item {
+    position: static;
+  }
+
+  .header_menu_item,
+  .header_submenu_item {
+    display: block;
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    margin-right: 0;
+  }
+
+  .header_menu_item_list {
+    display: none;
+  }
+
+  .header_menu_item a {
+    padding: 15px 10px;
+  }
+
+  .header_menu_item a::after {
+    content:'→';
+    position: absolute;
+    right: 30px;
+  }
+
+  .header_submenu {
+    // display: block;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    left:5%;
+    top: -20% ;
+    width: 95%;
+    margin: 0;
+    background-color: $default-color-dark;
+    box-shadow: 10px 53px 47px 55px rgba(0,0,0,0.44);
+  }
+
+  .header_submenu_title {
+    display: inline-block;
+    line-height: 76px;
+    color: $accent-color;
+    font-size: $advantage-size-text;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .header_submenu_item a {
+    padding: 15px 20px;
+    color: $default-color-light;
+  }
+  .header_submenu_item a:hover {
+    color: $accent-color;
+    background-color: transparent;
+  }
 }
 
+/*688px*/
+/**********************************************************************************/
+@media screen and (min-width: 43em) { //688px
+  .header_menu_item:hover .header_submenu {
+    display: block;
+  }
+}
+
+/*624px*/
+/**********************************************************************************/
 @media screen and (max-width: 39em) { //624px
+  //header
+  .header_logo {
+    // float: none;
+  }
+
+  .header .a-wrapp {
+    padding-right: 0;
+  }
+
+  .header .logo_line {
+    right: auto;
+  }
+
+  .header_call {
+    margin: 8px 10px 8px 0px;
+    // float: none;
+    text-align: center;
+  }
+
+  .header_call_number,
+  .header_call_btn {
+    display: inline-block;
+  }
+  .header_call_btn a {
+    padding: 8px 10px;
+  }
+
+  .header_call_number {
+    // width: 132px;
+    margin-right: 10px;
+    font-size: 17px;
+  }
+
   .services .services_list_item {
     width: 90%;
     margin-right: 0;
@@ -479,35 +619,13 @@
   }
 }
 @media screen and (max-width: 415px) { //415px
-
   //header
+
+
   .header_logo {
-    float: none;
+    width: 185px;
   }
 
-  .header .logo_line {
-    right: auto;
-  }
-
-  .header_call {
-    margin: 8px 0;
-    float: none;
-    text-align: center;
-  }
-
-  .header_call_number,
-  .header_call_btn {
-    display: inline-block;
-  }
-  .header_call_btn a {
-    padding: 8px 10px;
-  }
-
-  .header_call_number {
-    // width: 132px;
-    margin-right: 10px;
-    font-size: 17px;
-  }
   //area
   .area {
     background-position: 75% 110%;
