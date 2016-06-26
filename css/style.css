@@ -849,12 +849,21 @@ img {
     height: 450px; }
   .home-slider_item_description {
     width: 445px; }
+  .slick-dots {
+    bottom: -20px; }
+  .slick-dots li button:before {
+    content: '';
+    background-color: #000; }
+  .slick-dotted.slick-slider {
+    margin-bottom: 0px; }
   .advantages .advantages_list_item {
     width: 90%;
     margin-right: 0; }
   .h2-title {
     font-size: 25px;
     margin: 25px 0 20px; }
+  .how-it-work .h2-title {
+    margin-top: 45px; }
   .inert_advantage {
     margin-bottom: 50px; }
   .inert_advantage_title {
@@ -878,8 +887,6 @@ img {
   .h2-title {
     font-size: 25px;
     margin: 25px 0 20px; }
-  .buses_slider {
-    padding: 0; }
   .buses_slider_item {
     width: auto;
     margin-bottom: 20px; }
@@ -1105,6 +1112,8 @@ img {
 @media screen and (max-width: 415px) {
   .header_logo {
     width: 185px; }
+  .buses_slider {
+    padding: 0; }
   .area {
     background-position: 75% 110%; }
   .area_foto {

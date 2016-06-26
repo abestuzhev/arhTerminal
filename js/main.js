@@ -19,7 +19,8 @@ $(document).ready(function(){
     {
       breakpoint: 860,
       settings: {
-        arrows: false
+        arrows: false,
+        dots: true
       }
     }
   ]
@@ -108,7 +109,7 @@ $(document).ready(function(){
 	}
   var link = document.querySelector('.header_menu-mobile_link');
   var mobileMenu = document.querySelector('.header_menu');
-  
+
   var subMenuLink = mobileMenu.querySelector('.header_sub');
   var subMenu = mobileMenu.querySelector('.header_submenu');
   var submenuMobileClose = mobileMenu.querySelector('.header_submenu-mobile');
