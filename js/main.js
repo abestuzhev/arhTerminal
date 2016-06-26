@@ -106,49 +106,41 @@ $(document).ready(function(){
     ]
   })
 	}
-  // if ($(window).width() > 700) {
-  //   $('.buses_slider').slick({
-  //     infinite: true,
-  //     speed: 300,
-  //     slidesToShow: 4,
-  //     slidesToScroll: 4,
-  //     responsive: [
-  //     {
-  //       breakpoint: 1360,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         slidesToScroll: 3
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 1060,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 2
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 724,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1
-  //       }
-  //     }
-  //   ]
-  // });
-  // }
   var link = document.querySelector('.header_menu-mobile_link');
   var mobileMenu = document.querySelector('.header_menu');
+  
   var subMenuLink = mobileMenu.querySelector('.header_sub');
   var subMenu = mobileMenu.querySelector('.header_submenu');
+  var submenuMobileClose = mobileMenu.querySelector('.header_submenu-mobile');
+
+  var modalOpen = document.querySelector('.js-header_call');
+  var modal = document.querySelector('.modal');
+
   link.addEventListener('click', function(event){
       event.preventDefault();
-      link.classList.toggle('menu_mobile-close')
-      mobileMenu.classList.toggle('js-menu-show')
+      link.classList.toggle('menu_mobile-close');
+      mobileMenu.classList.toggle('js-menu-show');
   });
 
   subMenuLink.addEventListener('click', function(event){
       event.preventDefault();
-      subMenu.classList.toggle('js-menu-show')
+      subMenu.classList.toggle('js-menu-show');
+  });
+
+  submenuMobileClose.addEventListener('click', function(event){
+    event.preventDefault();
+    subMenu.classList.remove('js-menu-show');
+    subMenu.classList.add('menu_mobile-close');
+    subMenu.classList.remove('menu_mobile-close');
+  });
+
+  modalOpen.addEventListener('click', function(event){
+    event.preventDefault();
+    modal.classList.add('js-show');
+  });
+
+  modalClose.addEventListener('click', function(event){
+    event.preventDefault();
+    modal.classList.remove('js-show');
   });
 });
