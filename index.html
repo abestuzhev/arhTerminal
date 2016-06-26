@@ -8,54 +8,56 @@
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
     <header class="header">
       <div class="logo_line"></div>
       <div class="a-wrapp">
         <div class="header_logo"><img src="img/logo.png" alt=""></div>
-        <div class="header_nav">
-          <div class="header_nav_contact">
-            <span class="header_nav_contact_email">arkhangelskterminal@gmail.com</span>
-            <span>ул. Дежневцев, 34 стр. 1</span>
-          </div>
-          <ul class="header_menu">
-            <li class="header_menu_item">
-              <a href="#">Главная</a>
-               <i class="header_menu_item_list"></i>
-            </li>
-            <li class="header_menu_item">
-              <a href="#">О компании</a>
-              <i class="header_menu_item_list"></i>
-              <ul class="header_submenu">
-                <li class="header_submenu_item"><a href="#">Наша компания</a></li>
-                <li class="header_submenu_item"><a href="#">Сотрудники</a></li>
-                <li class="header_submenu_item"><a href="#">Система качества</a></li>
-                <li class="header_submenu_item"><a href="#">Отзывы</a></li>
-                <li class="header_submenu_item"><a href="#">Новости</a></li>
-                <li class="header_submenu_item"><a href="#">Документы для скачивания</a></li>
-              </ul>
-            </li>
-            <li class="header_menu_item">
-              <a href="#">Услуги </a>
-              <i class="header_menu_item_list"></i>
-            </li>
-            <li class="header_menu_item">
-              <a href="#">Отраслевые решения</a>
-              <i class="header_menu_item_list"></i>
-            </li>
-            <li class="header_menu_item">
-              <a href="#">Проекты</a>
-              <i class="header_menu_item_list"></i>
-            </li>
-            <li class="header_menu_item"><a href="#">География деятельности</a></li>
-            <li class="header_menu_item"><a href="#">Контакты</a></li>
-          </ul>
-        </div>
+        <div class="header_menu-mobile"><a href="" class="header_menu-mobile_link"></a></div>
         <div class="header_call">
           <div class="header_call_number">+7 911 55-55-555</div>
-          <div class="header_call_btn"><a href="#">Заказать звонок</a></div>
+          <div class="header_call_btn"><a href="#" class="js-header_call">Заказать звонок</a></div>
         </div>
+        <div class="header_contact">
+          <span class="header_contact_email">arkhangelskterminal@gmail.com</span>
+          <span>ул. Дежневцев, 34 стр. 1</span>
+        </div>
+        <ul class="header_menu">
+          <li class="header_menu_item">
+            <a href="#">Главная</a>
+             <i class="header_menu_item_list"></i>
+          </li>
+          <li class="header_menu_item">
+            <a href="#" class="header_sub">О компании</a>
+            <i class="header_menu_item_list"></i>
+            <ul class="header_submenu">
+              <div class="header_submenu_title">О компании</div>
+              <div class="header_menu-mobile"><a href="" class="header_submenu-mobile"></a></div>
+              <li class="header_submenu_item"><a href="#">Наша компания</a></li>
+              <li class="header_submenu_item"><a href="#">Сотрудники</a></li>
+              <li class="header_submenu_item"><a href="#">Система качества</a></li>
+              <li class="header_submenu_item"><a href="#">Отзывы</a></li>
+              <li class="header_submenu_item"><a href="#">Новости</a></li>
+              <li class="header_submenu_item"><a href="#">Документы для скачивания</a></li>
+            </ul>
+          </li>
+          <li class="header_menu_item">
+            <a href="#">Услуги </a>
+            <i class="header_menu_item_list"></i>
+          </li>
+          <li class="header_menu_item">
+            <a href="#">Отраслевые решения</a>
+            <i class="header_menu_item_list"></i>
+          </li>
+          <li class="header_menu_item">
+            <a href="#">Проекты</a>
+            <i class="header_menu_item_list"></i>
+          </li>
+          <li class="header_menu_item"><a href="#">География деятельности</a></li>
+          <li class="header_menu_item"><a href="#">Контакты</a></li>
+        </ul>
       </div>
     </header>
     <div class="home-slider">
@@ -69,58 +71,69 @@
         </div>
       </div>
       <div class="home-slider_item" style="background-image: url(img/slide-2.jpg);"></div>
-    </div>
+    </div> <!--end home-slider-->
     <div class="how-it-work">
+      <div class="slider-bg"></div>
       <div class="a-wrapp">
         <div class="h2_wrapp"><h2 class="h2-title">Как мы это делаем:</h2></div>
         <div class="how-it-work_list">
-          <div class="how-it-work_list_item how-it-work_top">
-            <img src="img/how-1.png" alt="">
-            <div class="caption_number">1</div>
-            <div class="caption_text">Перевозка</div>
-            <div class="how-line-right"></div>
-          </div>
-          <div class="how-it-work_list_item caption-top">
-            <div class="caption_text">Прием груза на складе</div>
-            <div class="caption_number">2</div>
-            <img src="img/how-2.png" alt="">
-            <div class="how-line-left"></div>
-          </div>
-          <div class="how-it-work_list_item how-it-work_top how-it-work_posbottom-3">
-            <img src="img/how-3.png" alt="">
-            <div class="caption_number">3</div>
-            <div class="caption_text">Перевалка, упаковка, укрупнение</div>
-            <div class="how-line-right"></div>
-          </div>
-          <div class="how-it-work_list_item caption-top">
-            <div class="caption_text">Хранение</div>
-            <div class="caption_number">4</div>
-            <img src="img/how-4.png" alt="">
-            <div class="how-line-left how-line-left--one"></div>
-          </div>
-          <div class="how-it-work_list_item how-it-work_top how-it-work_posbottom-2">
-            <img src="img/how-5.png" alt="">
-            <div class="caption_number">5</div>
-            <div class="caption_text">Погрузка на судно</div>
-            <div class="how-line-right"></div>
-          </div>
-          <div class="how-it-work_list_item caption-top">
-            <div class="caption_text">Фрахт</div>
-            <div class="caption_number">6</div>
-            <img src="img/how-6.png" alt="">
-            <div class="how-line-left how-line-left--one"></div>
-          </div>
-          <div class="how-it-work_list_item how-it-work_top how-it-work_posbottom-3" >
-            <img src="img/how-7.png" alt="">
-            <div class="caption_number">7</div>
-            <div class="caption_text">Приём и разгрузка груза</div>
-            <div class="how-line-right"></div>
-          </div>
-          <div class="how-it-work_list_item caption-top">
-            <div class="caption_text">Доставка до объекта</div>
-            <div class="caption_number">8</div>
-            <img src="img/how-8.png" alt="">
-          </div>
+          <div class="how-it-work_block">
+            <div class="how-it-work_list_item how-it-work_top">
+              <div class="how_img"><img src="img/how-1.png" alt=""></div>
+              <div class="caption_number">1
+                <div class="how-line-right"></div>
+              </div>
+              <div class="caption_text">Перевозка</div>
+            </div>
+            <div class="how-it-work_list_item caption-top">
+              <div class="how_img"><img src="img/how-2.png" alt=""></div>
+              <div class="caption_number caption_number--top">2
+                <div class="how-line-left"></div>
+              </div>
+              <div class="caption_text caption_text--top">Прием груза на складе</div>
+            </div>
+            <div class="how-it-work_list_item how-it-work_top">
+              <div class="how_img"><img src="img/how-3.png" alt=""></div>
+              <div class="caption_number">3
+                <div class="how-line-right"></div></div>
+              <div class="caption_text">Перевалка, упаковка, укрупнение</div>
+            </div>
+            <div class="how-it-work_list_item caption-top">
+              <div class="how_img"><img src="img/how-4.png" alt=""></div>
+              <div class="caption_number caption_number--top">4
+                <div class="how-line-left how-line-none"></div>
+              </div>
+              <div class="caption_text caption_text--top">Хранение</div>
+            </div>
+          </div> <!--end how-it-work_block-->
+          <div class="how-it-work_block">
+            <div class="how-it-work_list_item how-it-work_top">
+              <div class="how_img"><img src="img/how-5.png" alt=""></div>
+              <div class="caption_number">5
+                <div class="how-line-right"></div>
+                  <div class="how-line-right"></div>
+              </div>
+              <div class="caption_text">Погрузка на судно</div>
+            </div>
+            <div class="how-it-work_list_item caption-top">
+              <div class="how_img"><img src="img/how-6.png" alt=""></div>
+              <div class="caption_number caption_number--top">6
+                <div class="how-line-left"></div></div>
+              <div class="caption_text caption_text--top">Фрахт</div>
+            </div>
+            <div class="how-it-work_list_item how-it-work_top" >
+              <div class="how_img"><img src="img/how-7.png" alt=""></div>
+              <div class="caption_number">7
+                <div class="how-line-right"></div>
+              </div>
+              <div class="caption_text">Приём и разгрузка груза</div>
+            </div>
+            <div class="how-it-work_list_item caption-top">
+              <div class="how_img"><img src="img/how-8.png" alt=""></div>
+              <div class="caption_number caption_number--top">8</div>
+              <div class="caption_text caption_text--top">Доставка до объекта</div>
+            </div>
+          </div> <!--end how-it-work_block-->
         </div> <!--end how-it-work_list -->
       </div>
     </div>
@@ -273,8 +286,8 @@
         <p class="area_text">В настоящее время в оперативном управлении нашей компании находятся грузовые площади (S≈2,5 Га) на территории ПРР «Экономия» / ОАО «АМТП».</p>
         <p class="area_text">На территории компании расположены:</p>
         <ul class="area_list">
-          <li class="area_list_item">- Щебень из горных пород поставляется с карьеров Республики Карелии и Архангельской области.</li>
-          <li class="area_list_item">- Намывной и строительный песок в объеме до 10 тыс. тонн есть и в наличии.</li>
+          <li class="area_list_item">- Два крытых неотапливаемых склада / S1=6000м2, S2=500м2 с возможностью внутрискладской работы крупнотоннажной перегрузочной техникой.</li>
+          <li class="area_list_item">- Двухэтажное административно-бытовое здание.</li>
         </ul>
         <div class="area_foto">
           <div class="area_foto_item"><img src="img/area_foto-1.jpg" alt=""></div>
@@ -336,7 +349,7 @@
               <li class="footer_menu_item"><a href="#">Контакты</a></li>
             </ul>
             <div class="footer_right_contact">
-              <p>163 011, Архангельск, ул. Лермонтова, 23, стр. 2</p>
+              <p><span class="adress-index">163 011, </span>Архангельск, ул. Лермонтова, 23, стр. 2</p>
               <p><span>Телефон / факс:</span> (8182) 61-00-11</p>
             </div>
             <div class="footer_right_contact">
@@ -352,6 +365,20 @@
         <div class="copyright_text">Copyright © 2015, Архангельский терминал</div>
         <div class="copyright_signature">Site by <a href="http://www.leeft.ru/">Leeft</a></div>
     </div>
+    </div>
+    <div class="modal">
+      <div class="modal_content">
+        <div class="modal_content_header">
+          <div class="modal_title">Заказать звонок</div>
+          <a href="" class="modal_close"><img src="img/modal-close.png" alt=""></a>
+        </div>
+        <form action="#" class="modal_content_form">
+          <input type="text" placeholder="Имя">
+          <input type="text" placeholder="Телефон">
+          <button>отправить</button>
+        </form>
+        <form></form>
+      </div>
     </div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
