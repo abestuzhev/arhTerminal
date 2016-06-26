@@ -853,7 +853,9 @@ img {
     bottom: -20px; }
   .slick-dots li button:before {
     content: '';
-    background-color: #000; }
+    background-color: #000;
+    width: 10px;
+    height: 10px; }
   .slick-dotted.slick-slider {
     margin-bottom: 0px; }
   .advantages .advantages_list_item {
